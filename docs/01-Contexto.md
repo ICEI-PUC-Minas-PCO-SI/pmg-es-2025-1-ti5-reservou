@@ -16,9 +16,15 @@ O problema a ser resolvido é a falta de um sistema eficiente de reservas de mes
 
 ## Objetivos
 
-Aqui, você deve descrever os objetivos do trabalho, indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima.
+O objetivo geral deste projeto é desenvolver um sistema de reservas de mesas para restaurantes, permitindo que clientes realizem reservas online de forma prática e eficiente, enquanto o estabelecimento gerencia melhor a ocupação e o atendimento.
 
-Além disso, apresente alguns (pelo menos 3) objetivos específicos, dependendo de onde você pretende concentrar sua prática investigativa ou como deseja aprofundar seu trabalho.
+Os objetivos específicos incluem:
+
+**Criar uma interface intuitiva e acessível** para que clientes possam visualizar a disponibilidade de mesas e efetuar reservas sem dificuldades.
+
+**Implementar um sistema de notificações** para lembrar os clientes de suas reservas e reduzir desistências sem aviso prévio.
+
+**Fornecer ferramentas de gestão para o restaurante**, como controle de horários, relatórios de ocupação e ajustes de disponibilidade em tempo real.
  
 > **Links úteis**:
 > - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
