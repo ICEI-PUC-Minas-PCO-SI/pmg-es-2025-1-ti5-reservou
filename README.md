@@ -4,22 +4,25 @@
 
 `DISCIPLINA: Trabalho Interdisciplinar Aplicações Web`
 
-`Xº semestre/ANO`
+`1º semestre/2025`
 
-Escreva um ou dois parágrafos resumindo o objetivo do seu projeto.
+O objetivo do projeto é desenvolver um sistema de reservas de mesas para restaurantes que permita aos clientes realizarem reservas de forma online, reduzindo filas e otimizando a ocupação do estabelecimento. A plataforma oferecerá funcionalidades como gerenciamento de disponibilidade, confirmação automática de reservas e notificações para evitar desistências sem aviso.
+
+Além de melhorar a experiência do cliente, o sistema facilitará a administração dos restaurantes, permitindo um controle mais eficiente das mesas, redução de erros operacionais e melhor organização do fluxo de atendimento. Dessa forma, o projeto visa aumentar a satisfação dos clientes e a rentabilidade dos estabelecimentos.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
-* Nome completo do aluno 6
+* Nome completo do aluno 1: Gean Marques de Araujo
+* Nome completo do aluno 2: Juan Carlos Reis
+* Nome completo do aluno 3: Caio Antonio Coelho
+* Nome completo do aluno 4: Sofia Sousa Da Silva
+* Nome completo do aluno 5: Arthur Augusto Buitrago Frainz
+* Nome completo do aluno 6  Paulo Henrique de Oliveira Eufrazio
+Dos Santos
 
 ## Professor
 
-* Nome completo do(a) professor(a)
+* Nome completo do(a) professor(a): Leonardo Vilela Cardoso
 
 ## Instruções de utilização
 
