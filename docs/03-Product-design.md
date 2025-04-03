@@ -5,21 +5,33 @@
 
 > ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
 
-Neste momento, transformam-se os insights e validações obtidos em soluções tangíveis e utilizáveis. Esta fase envolve a definição de uma proposta de valor, detalhando a prioridade de cada ideia, e a consequente criação de wireframes, mockups e protótipos de alta fidelidade, que especificam a interface e a experiência do usuário.
+
 
 
 ## Histórias de usuários
 
 Com base na análise das personas, foram identificadas as seguintes histórias de usuários:
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
+|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/  VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas  ⚠️ EXEMPLO ⚠️         | Não esquecer de fazê-las               |
+|Cliente| Reservar uma mesa em um restaurante pelo site|  Garantir meu lugar sem precisar esperar na chegada               |
+|Cliente| Receber uma confirmação da minha reserva por e-mail |   Ter certeza de que minha reserva foi feita corretamente              |
+| Funcionário| Receber uma confirmação da minha reserva por e-mail |    Me organizar melhor para atender os clientes              | 
+| Funcionário| Alterar ou cancelar uma reserva quando solicitado pelo cliente |   Ajustar a disponibilidade de mesas e atender melhor os clientes        | 
+ 
 |Administrador       | Alterar permissões        ⚠️ EXEMPLO ⚠️         | Permitir que possam administrar contas |
+
+|Dono do Restaurante |  Definir a quantidade de mesas disponíveis para reserva no sistema |   Ajustar a disponibilidade de mesas e atender melhor os clientes        |  Evitar reservas excessivas e garantir um bom atendimento | Acessar todas as reservas feitas pelos clientes| Acompanhar a ocupação do restaurante e tomar decisões estratégicas|
+ 
+
+
+
 
 > ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
 
-Apresente aqui as histórias de usuários que são relevantes para o projeto da sua solução. As histórias de usuários consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuários por contexto, para facilitar consultas recorrentes a esta parte do documento.
+**Mariana Lopes**  empresária de uma rede de restaurantes, precisa de um sistema escalável que permita gerenciar reservas em várias unidades, fornecendo relatórios detalhados e suporte ágil para tomadas de decisão. 
+
+**Clientes** Os clientes finais esperam uma experiência intuitiva e rápida para efetuar reservas e interagir com recursos adicionais, como pedidos via QR Code, enquanto a equipe operacional e técnica necessita de ferramentas que vinculem pedidos às mesas, otimizem o atendimento e garantam uma gestão robusta do código-fonte com processos de deploy contínuo.
 
 > **Links úteis**:
 > - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
@@ -31,11 +43,14 @@ Apresente aqui as histórias de usuários que são relevantes para o projeto da 
 
 ## Proposta de valor
 
+
+
 **✳️✳️✳️ APRESENTE O DIAGRAMA DA PROPOSTA DE VALOR PARA CADA PERSONA ✳️✳️✳️**
 
-##### Proposta para a persona XPTO ⚠️ EXEMPLO ⚠️
+**PROPOSTA DE VALOR PARA OS CLIENTES**
+![Images](images/Proposta%20de%20Valor.png)
 
-![Exemplo de proposta de valor](images/exemplo-proposta-valor.png)
+
 
 > ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
 >
@@ -53,31 +68,20 @@ As tabelas a seguir apresentam os requisitos funcionais e não funcionais que de
 
 | ID     | Descrição do Requisito                                   | Prioridade |
 | ------ | ---------------------------------------------------------- | ---------- |
-| RF-001 | Permitir que o usuário cadastre tarefas ⚠️ EXEMPLO ⚠️ | ALTA       |
-| RF-002 | Emitir um relatório de tarefas no mês ⚠️ EXEMPLO ⚠️ | MÉDIA     |
+| RF-001 | Permitir cadastro de clientes e restaurantes |         ALTA       |
+| RF-002 | Implementar sistema de reservas com horários disponíveis. | ALTA     |
+| RF-003 | Enviar confirmação de reserva por e-mail.disponíveis. | ALTA     |
+| RF-003 | Enviar confirmação de reserva por e-mail.disponíveis. | ALTA   |
 
 ### Requisitos não funcionais
 
 | ID      | Descrição do Requisito                                                              | Prioridade |
 | ------- | ------------------------------------------------------------------------------------- | ---------- |
-| RNF-001 | O sistema deve ser responsivo para rodar em dispositivos móveis ⚠️ EXEMPLO ⚠️ | MÉDIA     |
-| RNF-002 | Deve processar as requisições do usuário em no máximo 3 segundos ⚠️ EXEMPLO ⚠️          | BAIXA      |
+| RNF-001 | Interface responsiva para diferentes dispositivos.| MÉDIA     |
+| RNF-002 | Banco de dados seguro e escalável.| MÉDIA     |
+| RNF-003 |Integração com APIs de mapas para localização dos restaurantes.| BAIXA      |
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
 >
-> Com base nas histórias de usuários, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos não funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-
-Lembre-se de que cada requisito deve corresponder a uma e somente uma característica-alvo da sua solução. Além disso, certifique-se de que todos os aspectos capturados nas histórias de usuários foram cobertos.
 
 > **Links úteis**:
 > - [O que são requisitos funcionais e requisitos não funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
@@ -92,5 +96,5 @@ O projeto está restrito aos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|001| O projeto deverá ser entregue até o final do semestre ⚠️ EXEMPLO ⚠️ |
-|002| Não é permitido o desenvolvimento de um módulo de back-end  ⚠️ EXEMPLO ⚠️  |
+|001|  O sistema deve ser desenvolvido utilizando HTML, CSS, Bootstrap e JavaScript.| 
+|002| O design deve ser responsivo, garantindo uma boa experiência tanto em dispositivosmóveis quanto em desktops.  |
