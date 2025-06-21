@@ -1,0 +1,115 @@
+:root {
+  --primary-red: #8B0000;
+  --accent-gold: #D4AF37;
+  --neutral-bg: #FFFDD0;
+  --neutral-text: #333333;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+}
+
+.formulario-container {
+  background-color: var(--neutral-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem;
+}
+
+.imagem-container {
+  background-color: var(--primary-red);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1.h2 {
+  font-weight: bold;
+  color: var(--neutral-text);
+  margin-bottom: 0.5rem; 
+}
+
+p {
+  color: var(--neutral-text);
+}
+
+label.form-label {
+  color: var(--neutral-text);
+  font-weight: 600;
+}
+
+.form-control {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid var(--accent-gold);
+  padding: 0.5rem 0.1rem;
+}
+
+.form-control:focus {
+  background-color: transparent;
+  border-color: var(--primary-red);
+  box-shadow: none;
+}
+
+.btn-gold {
+  background-color: var(--accent-gold);
+  color: var(--neutral-text);
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 8px 30px;
+  border: none;
+  text-transform: none;
+  transition: background-color 0.2s ease;
+}
+.btn-gold:hover {
+  background-color: #c19b26;
+  color: var(--neutral-text);
+}
+
+.link-restaurante {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.link-restaurante a {
+  color: var(--primary-red);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.link-restaurante a:hover {
+  text-decoration: underline;
+}
+
+.icone-topo {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+.icone-topo img {
+  width: 40px;
+}
+
+.icone-centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icone-centro img {
+  width: 150px;
+  opacity: 0.9;
+}
+
+@media (max-width: 767.98px) {
+  .imagem-container {
+      display: none;
+  }
+}
+
+.message { margin-top: 15px; padding: 10px; border-radius: 5px; display: none; font-size: 0.9rem; margin-bottom: 30px;}
+.success { background-color: #d1e7dd; color: #0f5132; border: 1px solid #badbcc; }
+.error { background-color: #f8d7da; color: #842029; border: 1px solid #f5c2c7; }

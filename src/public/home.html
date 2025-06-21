@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reservou - Restaurantes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="./assets/css/home.css" />
+</head>
+<body>
+
+  <nav class="navbar px-3">
+    <a href="home.html" class="navbar-brand d-flex align-items-center">
+      <img style="height: 50px; margin-right: 10px;" src="assets/img/logo-reservou.png" alt="Logo Reservou">
+      <span>RESERVOU</span>
+    </a>
+    <div class="d-flex align-items-center gap-3">
+      <div id="nav-options" class="d-flex align-items-center gap-3">
+        <div id="nav-default">
+          <a href="assets/user/favoritos.html" id="nav-link-favoritos" class="btn btn-nav">Favoritos</a>
+          <a href="assets/user/minhas-reservas.html" id="nav-link-reservas" class="btn btn-nav">Minhas Reservas</a>
+        </div>
+        <div id="nav-restaurante" class="d-none dropdown">
+          <button class="btn btn-nav dropdown-toggle" type="button" id="dropdownRestaurante" data-bs-toggle="dropdown" aria-expanded="false">
+            <span id="nome-restaurante-logado">Nome do Restaurante</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownRestaurante">
+            <li><a class="dropdown-item" href="assets/restaurante/pagina-admin.html">Administrar restaurante</a></li>
+            <li><a class="dropdown-item" href="assets/restaurante/reservas.html">Visualizar reservas</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="input-group barra-busca">
+        <input type="text" id="campoFiltro" class="form-control" placeholder="Buscar..." aria-label="Buscar por nome">
+        <span class="input-group-text"><i class="bi bi-search"></i></span>
+      </div>
+      <button class="btn-hamburger" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral" aria-controls="menuLateral">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+  </nav>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="menuLateral" aria-labelledby="menuLateralLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="menuLateralLabel">Menu</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div id="menu-deslogado">
+        <a href="login.html" class="nav-link">Login</a>
+        <a href="assets/user/cadastro-usuario.html" class="nav-link">Cadastro</a>
+        <a href="assets/user/enviar-fb.html" class="nav-link">Enviar Feedback</a>
+      </div>
+      <div id="menu-logado" class="d-none">
+        <p id="nome-usuario-logado" class="nome-display text-center"></p>
+        <button id="btn-logout" class="btn btn-nav-logout w-100">Logout</button>
+        <a href="assets/user/enviar-fb.html" class="nav-link">Enviar Feedback</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="loginToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <strong class="me-auto">Aviso</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Você precisa fazer login para usar esta função.
+      </div>
+    </div>
+  </div>
+
+  <main class="container-fluid flex-grow-1">
+    <div style="margin-top: 10px;" id="carrosselTopo" class="carousel slide mx-auto mb-5 rounded-4 overflow-hidden " data-bs-interval="3000" data-bs-ride="carousel">
+      <div class="carousel-inner" id="conteudoCarrossel"></div>
+      <div class="carousel-indicators" id="indicadoresCarrossel"></div>
+      <a class="carousel-control-prev" href="#carrosselTopo" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"></span>
+      </a>
+      <a class="carousel-control-next" href="#carrosselTopo" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"></span>
+      </a>
+    </div>
+    <h3 class="titulo-secao" id="titulo-secao">RESTAURANTES</h3>
+    <div id="gridRestaurantes" class="row justify-content-center px-md-4"></div>
+  </main>
+
+  <footer class="footer-custom text-white text-center p-3 mt-auto">
+    <p class="m-0">© 2025 Reservou - Todos os direitos reservados</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/home.js"></script>
+</body>
+</html>

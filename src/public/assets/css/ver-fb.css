@@ -1,0 +1,40 @@
+.card.feedback-card {
+    background-color: #fff;
+    border: 1px solid #e9ecef;
+    border-left: 5px solid var(--accent-gold);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: all 0.2s ease-in-out;
+}
+
+.card.feedback-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.card-body {
+    position: relative;
+    padding-right: 45px;
+}
+
+.card-title {
+    color: var(--primary-red);
+    font-weight: 600;
+}
+
+.btn-excluir {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background-color: transparent;
+    border: none;
+    color: #6c757d; 
+    font-size: 1rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px; 
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-excluir:hover {
+    background-color: #dc3545; 
+    color: white;
+}

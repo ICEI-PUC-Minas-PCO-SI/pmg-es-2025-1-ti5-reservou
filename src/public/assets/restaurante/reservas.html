@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RESERVOU | Gerenciar Reservas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../css/pagina-admin.css" />
+  <link rel="stylesheet" href="../css/reservas.css" />
+</head>
+<body>
+    <div class="d-flex">
+        <div class="sidebar d-flex flex-column p-3">
+            <a href="../../home.html" class="logo text-decoration-none mb-4">
+                <img src="../img/logo-reservou.png" alt="Logo" width="40" class="me-2">
+                <h3 class="d-inline-block align-middle m-0">Reservou</h3>
+            </a>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link" id="profileLink">
+                        <i class="bi bi-person-fill me-2"></i> Perfil
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link active" id="reservasLink" aria-current="page">
+                        <i class="bi bi-calendar-check-fill me-2"></i> Gerenciar Reservas
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="editMenuLink" href="#">
+                        <i class="bi bi-journal-text me-2"></i> Editar Cardápio
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="viewFeedbacksLink" href="#">
+                        <i class="bi bi-chat-left-text-fill me-2"></i> Ver Feedbacks
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <main class="w-100 p-4" style="background-color: #f8f9fa;">
+            <div class="container-fluid">
+                <h1 class="display-5 mb-4">Gerenciamento de Reservas</h1>
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-white">
+                        <h2 class="h5 mb-0">Reservas Futuras</h2>
+                    </div>
+                    <div class="card-body">
+                        <div id="loadingSpinner" class="text-center p-4" style="display: none;">
+                            <div class="spinner-border text-danger" role="status">
+                                <span class="visually-hidden">Carregando...</span>
+                            </div>
+                        </div>
+                        <ul id="listaReservasFuturas" class="list-group list-group-flush">
+                            </ul>
+                    </div>
+                </div>
+                <div class="card shadow-sm">
+                    <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                        <h2 class="h5 mb-0">Histórico de Reservas</h2>
+                        <button id="limparAntigasBtn" class="btn btn-sm btn-outline-danger">
+                            <i class="bi bi-trash-fill me-1"></i> Limpar Histórico
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <ul id="listaReservasAntigas" class="list-group list-group-flush">
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="modal fade" id="modalEditar" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Editar Reserva</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <input type="hidden" id="editId" />
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="editStatus" class="form-label">Status da Reserva</label>
+                  <select id="editStatus" class="form-select">
+                    <option value="Pendente">Pendente</option>
+                    <option value="Confirmada">Confirmada</option>
+                    <option value="Cancelada">Cancelada</option>
+                    <option value="Concluída">Concluída</option>
+                  </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="editEstacionamento" class="form-label">Estacionamento?</label>
+                    <select id="editEstacionamento" class="form-select">
+                        <option value="Não">Não</option>
+                        <option value="Sim">Sim</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mb-3">
+              <label for="editNumeroMesa" class="form-label">Nº da Mesa</label>
+              <input type="number" class="form-control" id="editNumeroMesa" required />
+            </div>
+            <div class="mb-3">
+                <label for="editQtdpessoas" class="form-label">Quantidade de pessoas</label>
+                <input type="number" class="form-control" id="editQtdPessoas" required />
+              </div>
+            <div class="mb-3">
+              <label for="editData" class="form-label">Data</label>
+              <input type="date" class="form-control" id="editData" required />
+            </div>
+            <div class="mb-3">
+              <label for="editHorario" class="form-label">Horário</label>
+              <input type="time" class="form-control" id="editHorario" required />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" id="salvarEdicao" class="btn btn-primary">Salvar Alterações</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="alertModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header alert-header-custom"><h5 class="modal-title"><i class="bi bi-exclamation-triangle-fill me-2"></i>Aviso</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div><div id="alertModalBody" class="modal-body"></div><div class="modal-footer"><button type="button" class="btn btn-gold" data-bs-dismiss="modal">OK</button></div></div></div>
+    </div>
+    <div class="modal fade" id="confirmModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header alert-header-custom"><h5 class="modal-title"><i class="bi bi-question-circle-fill me-2"></i>Confirmação</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div><div id="confirmModalBody" class="modal-body"></div><div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button><button type="button" class="btn btn-principal" id="confirmOkBtn">Confirmar</button></div></div></div>
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/reservas.js"></script>
+</body>
+</html>

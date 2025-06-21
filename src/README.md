@@ -23,27 +23,17 @@ src/  (esta pasta aqui)
 │   │   │   ├── app.js
 │   │   │   └── (outros arquivos .js)
 │   │   │
-│   │   ├── images/
-│   │   │   ├── logo.png
-│   │   │   └── (outras imagens)
-│   │   │
-│   │   └── fonts/
-│   │       ├── font1.ttf
-│   │       └── (outras fontes)
-│   │
-│   ├── modulos/
-│   │   ├── modulo-1/
-│   │   │   └── (arquivos do módulo)
-│   │   │
-│   │   └── modulo-2/
-│   │       └── (arquivos do módulo)
+│   │   └── images/
+│   │       ├── logo.png
+│   │       └── (outras imagens)
+│   │       
 │   │
 │   ├── index.html (página inicial front-end)
 │   ├── about.html
 │   ├── contact.html
 │   └── (outras páginas)
 │
-│── index.js (app back-end)
+│── server.js (app back-end)
 │── package.json (configuração back-end)
 └── README.md (este arquivo aqui)
 ```
@@ -55,7 +45,6 @@ Para a montagem do site, devem ser editados os arquivos existentes e criados nov
 Na pasta `public`, sugere-se a seguinte organização dos arquivos do site:
 
 * Pasta `assets`: destinada aos arquivos de formatação (CSS), scripts (JS), imagens utilizadas no site (JPG, PNG, GIF, SVG etc.), fontes (TTF) e outros arquivos gerais utilizados por todo o site.
-* Pasta `modulos`: onde devem ser armazenados os arquivos relacionados à implementação das funcionalidades do site. Recomenda-se criar uma subpasta para cada novo módulo ou funcionalidade, o que também pode facilitar a divisão do trabalho entre os membros do grupo.
 * Arquivo `index.html`: arquivo que representa a "home page" do site.
 
 ## Parte back-end

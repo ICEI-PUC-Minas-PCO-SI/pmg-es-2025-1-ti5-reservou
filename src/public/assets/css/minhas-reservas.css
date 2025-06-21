@@ -1,0 +1,70 @@
+:root {
+  --cor-vinho: #8B0000;
+  --cor-creme: #FFFDD0;
+  --cor-dourado: #D4AF37;
+  --cor-texto-claro: #f8f9fa;
+  --cor-texto-escuro: #343a40;
+}
+
+body {
+  background-color: var(--cor-creme);
+  color: var(--cor-texto-escuro);
+}
+
+.navbar {
+  background-color: var(--cor-vinho);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-brand {
+  color: #fff !important; 
+  font-weight: bold;
+}
+
+.navbar .btn-nav {
+  color: var(--cor-creme);
+  background-color: transparent;
+  border: 1px solid var(--cor-creme);
+}
+
+.navbar .btn-nav:hover {
+  background-color: var(--cor-creme);
+  color: var(--cor-vinho);
+}
+
+h1 {
+  color: var(--cor-vinho);
+  font-weight: 300;
+}
+
+.table {
+  background-color: white;
+}
+
+.table thead {
+  background-color: var(--cor-vinho);
+  color: var(--cor-creme);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+.table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.btn-danger {
+  background-color: var(--cor-dourado);
+  border-color: var(--cor-dourado);
+}
+
+.btn-danger:hover {
+  background-color: #c8a436;
+  border-color: #c8a436;
+}
+
+.modal-header, .modal-footer {
+  border-color: #eee;
+}

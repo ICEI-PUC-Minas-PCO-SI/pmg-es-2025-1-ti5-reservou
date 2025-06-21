@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Cadastro de Usuário - Reservou</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../../assets/css/cadastro-usuario.css">
+</head>
+<body>
+    <div class="container-fluid vh-100 g-0">
+        <div class="row g-0 h-100">
+            <div class="col-md-7 formulario-container">
+                
+                <h1 class="h2">Cadastro de Usuário</h1>
+                <p class="link-restaurante">Não é usuário? <a href="../restaurante/cadastro-restaurantes.html">Cadastro de Restaurante</a></p>
+                <p class="mb-5">Bem Vindo ao Reservou!<br>Preencha os campos abaixo e faça seu cadastro</p>
+
+                <form id="cadastroFormUsuario" class="w-100">
+                    <div class="mb-4">
+                        <label for="nome" class="form-label">Nome Completo:</label>
+                        <input type="text" placeholder="Digite seu nome completo..." class="form-control" id="nome" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="form-label">E-mail:</label>
+                        <input type="email" placeholder="Digite o e-mail..." class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="form-label">Senha:</label>
+                        <input type="password" placeholder="Crie uma senha forte..." class="form-control" id="password" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="confirmPassword" class="form-label">Confirmar Senha:</label>
+                        <input type="password" placeholder="Confirme sua senha..." class="form-control" id="confirmPassword" required>
+                    </div>
+                    <div class="mt-4">
+                        <button type="submit" class="btn btn-gold">Cadastrar</button>
+                    </div>
+                </form>
+                <div id="message" class="message"></div>
+            </div>
+
+            <div class="col-md-5 imagem-container">
+                <div class="icone-topo">
+                    <a href="../../home.html"><img src="../../assets/img/logo-reservou.png" alt="Ícone topo"></a>
+                </div>
+                <div class="icone-centro">
+                    <img src="../../assets/img/logo-reservou.png" alt="Ícone principal">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../assets/js/cadastro-usuario.js"></script>
+</body>
+</html>

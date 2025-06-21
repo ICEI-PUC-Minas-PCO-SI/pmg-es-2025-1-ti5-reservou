@@ -1,0 +1,125 @@
+:root {
+    --primary-red: #8B0000;
+    --primary-red-dark: #660000;
+    --accent-gold: #D4AF37;
+    --neutral-text-light: rgba(255, 255, 255, 0.8);
+}
+
+.sidebar {
+    background: var(--primary-red);
+    min-height: 100vh;
+    color: white;
+    width: 280px;
+}
+
+.logo {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.logo:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.logo h3 {
+    margin: 0;
+    font-weight: bold;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: var(--neutral-text-light);
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: all 0.3s;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.nav-link i {
+    min-width: 20px;
+}
+
+.profile-image-container {
+    position: relative;
+    width: 120px;
+}
+
+.profile-image {
+    width: 100%;
+    height: auto; 
+    border-radius: 15px;
+    border: 4px solid #dee2e6;
+    background-color: #fff;
+}
+
+.upload-overlay {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: var(--primary-red);
+    color: white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 2px solid white;
+}
+
+.upload-overlay:hover {
+    background: var(--primary-red-dark);
+    transform: scale(1.1);
+}
+
+.form-container {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+}
+
+.form-control:focus {
+    border-color: var(--primary-red);
+    box-shadow: 0 0 0 0.2rem rgba(139, 0, 0, 0.25);
+}
+
+.btn-primary {
+    background: var(--primary-red);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background: var(--primary-red-dark);
+}
+
+.btn-outline-secondary {
+    border-radius: 8px;
+    padding: 10px 25px;
+    font-weight: 600;
+}
+
+.alert-info {
+    background-color: rgba(139, 0, 0, 0.05);
+    border: 1px solid rgba(139, 0, 0, 0.2);
+    color: var(--primary-red);
+    font-weight: 500;
+}

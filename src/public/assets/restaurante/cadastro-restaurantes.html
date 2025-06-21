@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservou - Cadastro de Restaurante</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/cadastro-restaurantes.css">
+</head>
+<body>
+    <div class="container-fluid g-0">
+        <div class="formulario-container">
+            <h1>CADASTRO DE RESTAURANTES</h1>
+            <p class="texto-bv">Bem-vindo ao Reservou!</p>
+            <p class="texto-sub">Preencha os campos abaixo para se juntar à nossa plataforma.</p>
+            <p class="texto-sub">Não é restaurante? <a style="color: #b00000;" href="../user/cadastro-usuario.html">Cadastro de usuário</a></p>
+            
+            <form id="formularioCadastro">
+                 <div class="row">
+                    <div class="col-md-6 grupo-form">
+                        <label for="nome">Nome do Restaurante</label>
+                        <input type="text" id="nome" name="nome" class="campo-entrada" required>
+                    </div>
+                    <div class="col-md-6 grupo-form">
+                        <label for="categoria">Categoria</label>
+                        <input type="text" id="categoria" name="categoria" class="campo-entrada" required>
+                    </div>
+                </div>
+                
+                <div class="grupo-form">
+                    <label for="endereco">Endereço</label>
+                    <input type="text" id="endereco" name="endereco" class="campo-entrada" required>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 grupo-form">
+                        <label for="capacidade">Capacidade Máxima</label>
+                        <input type="number" id="capacidade" name="capacidade" class="campo-entrada" required>
+                    </div>
+                     <div class="col-md-6 grupo-form">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" class="campo-entrada" required>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-6 grupo-form">
+                        <label for="mapaLinhas">Linhas do Mapa</label>
+                        <input type="number" id="mapaLinhas" name="mapaLinhas" class="campo-entrada" placeholder="Ex: 5" required>
+                    </div>
+                    <div class="col-md-6 grupo-form">
+                        <label for="mapaColunas">Colunas do Mapa</label>
+                        <input type="number" id="mapaColunas" name="mapaColunas" class="campo-entrada" placeholder="Ex: 8" required>
+                    </div>
+                </div>
+
+                <div class="grupo-form">
+                    <label for="foto">Foto da fachada (Opcional)</label>
+                    <div class="input-group">
+                        <input type="file" class="form-control" id="foto" accept="image/*">
+                        <span class="input-group-text"><i class="bi bi-cloud-arrow-up"></i></span>
+                    </div>
+                    <div class="preview-container mt-2">
+                        <img id="imagemPreview" src="" alt="Pré-visualização da imagem" class="img-fluid rounded">
+                    </div>
+                </div>
+                
+                <div class="grupo-form">
+                    <label for="email">Email de Acesso</label>
+                    <input type="email" id="email" name="email" class="campo-entrada" required>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 grupo-form">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" name="senha" class="campo-entrada" required>
+                    </div>
+                    <div class="col-md-6 grupo-form">
+                        <label for="confirmarSenha">Confirmar senha</label>
+                        <input type="password" id="confirmarSenha" name="confirmarSenha" class="campo-entrada" required>
+                    </div>
+                </div>
+                
+                <div class="grupo-form mt-4">
+                    <button type="submit" class="botao-enviar">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+        <div class="imagem-container d-none d-lg-flex">
+            <div class="icone-topo">
+                <a href="../../home.html">
+                    <img src="../img/logo-reservou.png" alt="Voltar para a Home" class="icone-home">
+                </a>
+            </div>
+            <div class="icone-centro">
+                <img src="../img/logo-reservou.png" alt="Ícone Mesa Restaurante" class="icone-mesa">
+            </div>
+        </div>
+    </div>
+    
+    <script src="../js/cadastro-restaurantes.js"></script>
+</body>
+</html>

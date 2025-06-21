@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de Cardápio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/pagina-admin.css"> 
+    <link rel="stylesheet" href="../css/editor-cardapio.css">
+</head>
+<body>
+    <div class="d-flex">
+        <div class="sidebar d-flex flex-column p-3">
+            <a href="../../home.html" class="logo text-decoration-none mb-4">
+                <img src="../img/logo-reservou.png" alt="Logo" width="40" class="me-2">
+                <h3 class="d-inline-block align-middle m-0">Reservou</h3>
+            </a>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link" id="profileLink">
+                        <i class="bi bi-person-fill me-2"></i> Perfil
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" id="reservasLink">
+                        <i class="bi bi-calendar-check-fill me-2"></i> Gerenciar Reservas
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" id="editMenuLink" href="#">
+                        <i class="bi bi-journal-text me-2"></i> Editar Cardápio
+                    </a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" id="viewFeedbacksLink" href="#">
+                        <i class="bi bi-chat-left-text-fill me-2"></i> Ver Feedbacks
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <main class="w-100 p-4" style="background-color: #f8f9fa;">
+            <div class="container-fluid">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h1 class="display-5">Editor de Cardápio: <span id="restaurantName"></span></h1>
+                    <button id="addCategoryBtn" class="btn btn-principal">
+                        <i class="bi bi-plus-circle-fill me-2"></i>Nova Categoria
+                    </button>
+                </div>
+                
+                <div id="loading" class="text-center p-5" style="display: none;">
+                    <div class="spinner-border text-danger" role="status">
+                        <span class="visually-hidden">Carregando...</span>
+                    </div>
+                </div>
+
+                <div id="menuEditor" class="menu-editor-container">
+                    </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="modal fade" id="itemModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="itemModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="itemForm">
+                        <input type="hidden" id="itemCategory">
+                        <input type="hidden" id="itemIndex">
+                        <div class="mb-3">
+                            <label for="itemName" class="form-label">Nome do Item</label>
+                            <input type="text" class="form-control" id="itemName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="itemDescription" class="form-label">Descrição</label>
+                            <textarea class="form-control" id="itemDescription" rows="3" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="itemPrice" class="form-label">Preço</label>
+                            <input type="number" class="form-control" id="itemPrice" step="0.01" min="0" placeholder="Ex: 58.50" required>
+                        </div>
+                        <button type="submit" class="btn btn-principal w-100">Salvar Item</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="promptModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="promptModalLabel">Nova Categoria</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="promptModalMessage"></p>
+                    <form id="promptForm">
+                        <input type="text" class="form-control" id="promptInput" required>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-principal" form="promptForm">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="alertModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header alert-header-custom"><h5 class="modal-title"><i class="bi bi-exclamation-triangle-fill me-2"></i>Aviso</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div><div id="alertModalBody" class="modal-body"></div><div class="modal-footer"><button type="button" class="btn btn-gold" data-bs-dismiss="modal">OK</button></div></div></div>
+    </div>
+    <div class="modal fade" id="confirmModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header alert-header-custom"><h5 class="modal-title"><i class="bi bi-question-circle-fill me-2"></i>Confirmação</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div><div id="confirmModalBody" class="modal-body"></div><div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button><button type="button" class="btn btn-principal" id="confirmOkBtn">Confirmar</button></div></div></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/editor-cardapio.js"></script>
+</body>
+</html>

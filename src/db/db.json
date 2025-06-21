@@ -1,25 +1,1186 @@
 {
   "usuarios": [
     {
-      "id": 1,
-      "login": "admin",
-      "senha": "123",
-      "nome": "Administrador do Sistema",
-      "email": "admin@abc.com"
+      "id": "1",
+      "idUsuario": 1,
+      "nome": "Usuário Admin",
+      "email": "admin@adm.com",
+      "password": "admin",
+      "restaurantesFavoritos": []
     },
     {
-      "id": 2,
-      "login": "user",
-      "senha": "123",
-      "nome": "Usuario Comum",
-      "email": "user@abc.com"
-    },
-    {
-      "login": "rommel",
-      "senha": "123",
-      "nome": "Rommel",
-      "email": "rommel@gmail.com",
-      "id": 3
+      "nome": "Paulo Henrique",
+      "email": "paulohenriquedeoliveira2006@gmail.com",
+      "password": "12",
+      "restaurantesFavoritos": [
+        "2"
+      ],
+      "id": "QrWMBvb"
     }
-  ]
+  ],
+  "reservas": [],
+  "restaurantes": [
+    {
+      "id": "1",
+      "infoCadastro": {
+        "nome": "Pizzaria Bella",
+        "imagemUrl": "assets/img/restaurantes/pizzaria-bella.jpg",
+        "endereco": "Rua A, 200, Contagem, MG",
+        "telefone": "31912345678",
+        "capacidade": 50,
+        "categoria": "Pizzaria",
+        "email": "pizza@mail.com",
+        "password": "1234"
+      },
+      "mapaRestaurante": {
+        "grid": {
+          "columns": 8,
+          "rows": 6
+        },
+        "elements": [
+          {
+            "type": "feature",
+            "label": "Entrada",
+            "gridPosition": {
+              "col": "4 / 6",
+              "row": "6"
+            }
+          },
+          {
+            "type": "feature",
+            "label": "Cozinha",
+            "gridPosition": {
+              "col": "1 / 4",
+              "row": "1"
+            }
+          },
+          {
+            "type": "feature",
+            "label": "Forno",
+            "gridPosition": {
+              "col": "4",
+              "row": "1"
+            }
+          },
+          {
+            "type": "feature",
+            "label": "Banheiros",
+            "gridPosition": {
+              "col": "8",
+              "row": "1 / 3"
+            }
+          },
+          {
+            "type": "table",
+            "id": 33,
+            "capacity": 6,
+            "shape": "rect",
+            "gridPosition": {
+              "col": "8",
+              "row": "3"
+            }
+          },
+          {
+            "type": "table",
+            "id": 21,
+            "capacity": 4,
+            "shape": "square",
+            "gridPosition": {
+              "col": "4",
+              "row": "2"
+            }
+          },
+          {
+            "type": "table",
+            "id": 12,
+            "capacity": 2,
+            "shape": "round",
+            "gridPosition": {
+              "col": "3",
+              "row": "2"
+            }
+          },
+          {
+            "type": "table",
+            "id": 27,
+            "capacity": 4,
+            "shape": "square",
+            "gridPosition": {
+              "col": "4",
+              "row": "5"
+            }
+          },
+          {
+            "type": "table",
+            "id": 32,
+            "capacity": 6,
+            "shape": "rect",
+            "gridPosition": {
+              "col": "7",
+              "row": "3"
+            }
+          },
+          {
+            "type": "table",
+            "id": 30,
+            "capacity": 4,
+            "shape": "square",
+            "gridPosition": {
+              "col": "6",
+              "row": "6"
+            }
+          },
+          {
+            "type": "table",
+            "id": 29,
+            "capacity": 4,
+            "shape": "square",
+            "gridPosition": {
+              "col": "6",
+              "row": "5"
+            }
+          },
+          {
+            "type": "table",
+            "id": 4,
+            "capacity": 4,
+            "shape": "square",
+            "gridPosition": {
+              "col": "3",
+              "row": "5"
+            }
+          },
+          {
+            "type": "table",
+            "id": 15,
+            "capacity": 2,
+            "shape": "round",
+            "gridPosition": {
+              "col": "2",
+              "row": "4"
+            }
+          },
+          {
+            "type": "table",
+            "id": 20,
+            "capacity": 2,
+            "shape": "round",
+            "gridPosition": {
+              "col": "3",
+              "row": "6"
+            }
+          },
+          {
+            "type": "table",
+            "id": 8,
+            "capacity": 6,
+            "shape": "rect",
+            "gridPosition": {
+              "col": "6",
+              "row": "1"
+            }
+          },
+          {
+            "type": "table",
+            "id": 26,
+            "capacity": 4,
+            "shape": "square",
+            "gridPosition": {
+              "col": "4",
+              "row": "4"
+            }
+          },
+          {
+            "type": "table",
+            "id": 2,
+            "capacity": 2,
+            "shape": "round",
+            "gridPosition": {
+              "col": "1",
+              "row": "5"
+            }
+          },
+          {
+            "type": "table",
+            "id": 34,
+            "capacity": 6,
+            "shape": "rect",
+            "gridPosition": {
+              "col": "8",
+              "row": "4"
+            }
+          },
+          {
+            "type": "table",
+            "id": 14,
+            "capacity": 2,
+            "shape": "round",
+            "gridPosition": {
+              "col": "1",
+              "row": "4"
+            }
+          },
+          {
+            "type": "table",
+            "id": 9,
+            "capacity": 2,
+            "shape": "round",
+            "gridPosition": {
+              "col": "7",
+              "row": "1"
+            }
+          },
+          {
+            "type": "table",
+            "id": 36,
+            "capacity": 6,
+            "shape": "rect",
+            "gridPosition": {
+              "col": "8",
+              "row": "5"
+            }
+          },
+          {
+            "type": "table",
+            "id": 22,
+            "capacity": 4,
+            "shape": "square",
+            "gridPosition": {
+              "col": "5",
+              "row": "2"
+            }
+          },
+          {
+            "type": "table",
+            "id": 16,
+            "capacity": 2,
+            "shape": "round",
+            "gridPosition": {
+              "col": "3",
+              "row": "4"
+            }
+          },
+          {
+            "type": "table",
+            "id": 5,
+            "capacity": 6,
+            "shape": "rect",
+            "gridPosition": {
+              "col": "5 / 8",
+              "row": "4"
+            }
+          }
+        ]
+      },
+      "cardapio": {
+        "Entradas": [
+          {
+            "nome": "Pão de Alho",
+            "descrição": "Pão italiano com pasta de alho da casa, gratinado com queijo parmesão.",
+            "preço": "R$ 22,00"
+          },
+          {
+            "nome": "Bruschetta de Tomate",
+            "descrição": "Fatias de pão tostado com tomate fresco, manjericão e azeite.",
+            "preço": "R$ 28,00"
+          },
+          {
+            "nome": "Salada Caprese",
+            "descrição": "Mussarela de búfala, rodelas de tomate e folhas de manjericão, regados com azeite.",
+            "preço": "R$ 35,00"
+          }
+        ],
+        "Pizzas Tradicionais": [
+          {
+            "nome": "Pizza de Calabresa",
+            "descrição": "Molho de tomate, mussarela, calabresa fatiada, cebola e orégano.",
+            "preço": "R$ 58,00"
+          },
+          {
+            "nome": "Pizza Margherita",
+            "descrição": "Molho de tomate, mussarela, rodelas de tomate fresco e manjericão.",
+            "preço": "R$ 55,00"
+          },
+          {
+            "nome": "Pizza Quatro Queijos",
+            "descrição": "Molho de tomate, mussarela, provolone, parmesão e gorgonzola.",
+            "preço": "R$ 62,00"
+          },
+          {
+            "nome": "Pizza de Frango com Catupiry",
+            "descrição": "Molho de tomate, frango desfiado, catupiry e milho.",
+            "preço": "R$ 60,00"
+          }
+        ],
+        "Pizzas Doces": [
+          {
+            "nome": "Pizza de Chocolate com Morango",
+            "descrição": "Mussarela, chocolate ao leite derretido e morangos frescos.",
+            "preço": "R$ 45,00"
+          },
+          {
+            "nome": "Pizza de Banana com Canela",
+            "descrição": "Mussarela, fatias de banana, açúcar e canela.",
+            "preço": "R$ 40,00"
+          }
+        ],
+        "Bebidas": [
+          {
+            "nome": "Refrigerante Lata",
+            "descrição": "Coca-Cola, Guaraná Antarctica, Fanta.",
+            "preço": "R$ 7,00"
+          },
+          {
+            "nome": "Suco Natural",
+            "descrição": "Laranja, Abacaxi com Hortelã, Morango.",
+            "preço": "R$ 10,00"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2",
+      "infoCadastro": {
+        "nome": "Sabor Mineiro",
+        "imagemUrl": "assets/img/restaurantes/sabor-mineiro.jpg",
+        "endereco": "Rua A, 100, Contagem, MG",
+        "telefone": "(31) 98765-4321",
+        "capacidade": 40,
+        "categoria": "Churrascaria",
+        "email": "contato@sabormineiro.com.br",
+        "password": "admin"
+      },
+      "mapaRestaurante": {
+        "grid": {
+          "columns": 10,
+          "rows": 7
+        },
+        "elements": [
+          {
+            "type": "feature",
+            "label": "Entrada",
+            "gridPosition": {
+              "col": "1",
+              "row": "3 / 6"
+            }
+          },
+          {
+            "type": "feature",
+            "label": "Churrasqueira",
+            "gridPosition": {
+              "col": "8 / 11",
+              "row": "1"
+            }
+          },
+          {
+            "type": "feature",
+            "label": "Buffet",
+            "gridPosition": {
+              "col": "8 / 11",
+              "row": "3 / 6"
+            }
+          },
+          {
+            "type": "table",
+            "id": 44,
+            "capacity": 6,
+            "shape": "rect",
+            "gridPosition": {
+              "col": "9",
+              "row": "2"
+            }
+          },
+          {
+            "type": "table",
+            "id": 35,
+            "capacity": 4,
+            "shape": "square",
+            "gridPosition": {
+              "col": "7",
+              "row": "4"
+            }
+          },
+          {
+            "type": "table",
+            "id": 45,
+            "capacity": 6,
+            "shape": "rect",
+            "gridPosition": {
+              "col": "10",
+              "row": "2"
+            }
+          },
+          {
+            "type": "table",
+            "id": 14,
+            "capacity": 2,
+            "shape": "round",
+            "gridPosition": {
+              "col": "4",
+              "row": "2"
+            }
+          },
+          {
+            "type": "table",
+            "id": 12,
+            "capacity": 2,
+            "shape": "round",
+            "gridPosition": {
+              "col": "1",
+              "row": "2"
+            }
+          },
+          {
+            "type": "table",
+            "id": 20,
+            "capacity": 2,
+            "shape": "round",
+            "gridPosition": {
+              "col": "3",
+              "row": "5"
+            }
+          },
+          {
+            "type": "table",
+            "id": 8,
+            "capacity": 6,
+            "shape": "rect",
+            "gridPosition": {
+              "col": "3",
+              "row": "1"
+            }
+          },
+          {
+            "type": "table",
+            "id": 28,
+            "capacity": 4,
+            "shape": "square",
+            "gridPosition": {
+              "col": "7",
+              "row": "1"
+            }
+          },
+          {
+            "type": "table",
+            "id": 4,
+            "capacity": 6,
+            "shape": "rect",
+            "gridPosition": {
+              "col": "3 / 6",
+              "row": "6"
+            }
+          },
+          {
+            "type": "table",
+            "id": 49,
+            "capacity": 6,
+            "shape": "rect",
+            "gridPosition": {
+              "col": "8",
+              "row": "7"
+            }
+          },
+          {
+            "type": "table",
+            "id": 23,
+            "capacity": 2,
+            "shape": "round",
+            "gridPosition": {
+              "col": "2",
+              "row": "6"
+            }
+          },
+          {
+            "type": "table",
+            "id": 51,
+            "capacity": 6,
+            "shape": "rect",
+            "gridPosition": {
+              "col": "10",
+              "row": "7"
+            }
+          },
+          {
+            "type": "table",
+            "id": 27,
+            "capacity": 2,
+            "shape": "round",
+            "gridPosition": {
+              "col": "4",
+              "row": "7"
+            }
+          },
+          {
+            "type": "table",
+            "id": 32,
+            "capacity": 4,
+            "shape": "square",
+            "gridPosition": {
+              "col": "6",
+              "row": "3"
+            }
+          },
+          {
+            "type": "table",
+            "id": 19,
+            "capacity": 2,
+            "shape": "round",
+            "gridPosition": {
+              "col": "2",
+              "row": "5"
+            }
+          },
+          {
+            "type": "table",
+            "id": 30,
+            "capacity": 4,
+            "shape": "square",
+            "gridPosition": {
+              "col": "7",
+              "row": "2"
+            }
+          },
+          {
+            "type": "table",
+            "id": 15,
+            "capacity": 2,
+            "shape": "round",
+            "gridPosition": {
+              "col": "2",
+              "row": "3"
+            }
+          },
+          {
+            "type": "table",
+            "id": 2,
+            "capacity": 4,
+            "shape": "square",
+            "gridPosition": {
+              "col": "5",
+              "row": "2"
+            }
+          },
+          {
+            "type": "table",
+            "id": 21,
+            "capacity": 2,
+            "shape": "round",
+            "gridPosition": {
+              "col": "4",
+              "row": "5"
+            }
+          },
+          {
+            "type": "table",
+            "id": 26,
+            "capacity": 2,
+            "shape": "round",
+            "gridPosition": {
+              "col": "3",
+              "row": "7"
+            }
+          }
+        ]
+      },
+      "cardapio": {
+        "Porções e Entradas": [
+          {
+            "nome": "Pão de Queijo com Linguiça",
+            "descrição": "Pão de queijo da casa recheado com linguiça artesanal mineira.",
+            "preço": "R$ 25,00"
+          },
+          {
+            "nome": "Torresmo de Barriga",
+            "descrição": "Torresmo crocante servido com mandioca frita e limão.",
+            "preço": "R$ 45,00"
+          },
+          {
+            "nome": "Mandioca Frita com Queijo",
+            "descrição": "Porção de mandioca cremosa frita, coberta com queijo minas derretido.",
+            "preço": "R$ 38,00"
+          }
+        ],
+        "Cortes Nobres na Brasa": [
+          {
+            "nome": "Picanha Fatiada",
+            "descrição": "300g da mais nobre picanha, servida com farofa de alho e vinagrete.",
+            "preço": "R$ 85,00"
+          },
+          {
+            "nome": "Fraldinha na Manteiga de Ervas",
+            "descrição": "300g de fraldinha macia, regada com manteiga de ervas frescas.",
+            "preço": "R$ 78,00"
+          },
+          {
+            "nome": "Coraçãozinho de Frango",
+            "descrição": "Espeto de coração de frango marinado em tempero especial.",
+            "preço": "R$ 35,00"
+          }
+        ],
+        "Pratos da Cozinha Mineira": [
+          {
+            "nome": "Feijão Tropeiro Completo",
+            "descrição": "O clássico mineiro com feijão, farinha, linguiça, ovo, couve e torresmo.",
+            "preço": "R$ 55,00"
+          },
+          {
+            "nome": "Tutu à Mineira",
+            "descrição": "Feijão batido e engrossado, servido com lombo de porco e couve refogada.",
+            "preço": "R$ 60,00"
+          }
+        ],
+        "Sobremesas": [
+          {
+            "nome": "Doce de Leite com Queijo",
+            "descrição": "Doce de leite cremoso com uma fatia de queijo minas fresco.",
+            "preço": "R$ 18,00"
+          },
+          {
+            "nome": "Pudim de Leite Condensado",
+            "descrição": "Pudim caseiro com calda de caramelo.",
+            "preço": "R$ 15,00"
+          }
+        ]
+      }
+    },
+    {
+      "id": "3",
+      "infoCadastro": {
+        "nome": "Mar de Sabores Peixaria",
+        "imagemUrl": "assets/img/restaurantes/mar-de-sabores.jpg",
+        "endereco": "Av. Beira Mar, 500, Contagem, MG",
+        "telefone": "31988887777",
+        "capacidade": 60,
+        "categoria": "Frutos do Mar",
+        "email": "mar@sabores.com",
+        "password": "peixe"
+      },
+      "mapaRestaurante": {
+        "grid": {
+          "columns": 7,
+          "rows": 5
+        },
+        "elements": [
+          {
+            "type": "feature",
+            "label": "Entrada",
+            "gridPosition": {
+              "col": "4",
+              "row": "1"
+            }
+          },
+          {
+            "type": "feature",
+            "label": "Aquário",
+            "gridPosition": {
+              "col": "1 / 3",
+              "row": "2 / 5"
+            }
+          },
+          {
+            "type": "feature",
+            "label": "Janelas",
+            "gridPosition": {
+              "col": "7",
+              "row": "2 / 5"
+            }
+          },
+          {
+            "type": "table",
+            "id": 16,
+            "capacity": 4,
+            "shape": "square",
+            "gridPosition": {
+              "col": "5",
+              "row": "3"
+            }
+          },
+          {
+            "type": "table",
+            "id": 20,
+            "capacity": 6,
+            "shape": "rect",
+            "gridPosition": {
+              "col": "6",
+              "row": "3"
+            }
+          },
+          {
+            "type": "table",
+            "id": 5,
+            "capacity": 6,
+            "shape": "rect",
+            "gridPosition": {
+              "col": "1",
+              "row": "1"
+            }
+          },
+          {
+            "type": "table",
+            "id": 18,
+            "capacity": 4,
+            "shape": "square",
+            "gridPosition": {
+              "col": "5",
+              "row": "5"
+            }
+          },
+          {
+            "type": "table",
+            "id": 7,
+            "capacity": 4,
+            "shape": "square",
+            "gridPosition": {
+              "col": "3",
+              "row": "1"
+            }
+          },
+          {
+            "type": "table",
+            "id": 22,
+            "capacity": 6,
+            "shape": "rect",
+            "gridPosition": {
+              "col": "6",
+              "row": "5"
+            }
+          },
+          {
+            "type": "table",
+            "id": 8,
+            "capacity": 6,
+            "shape": "rect",
+            "gridPosition": {
+              "col": "5",
+              "row": "1"
+            }
+          },
+          {
+            "type": "table",
+            "id": 2,
+            "capacity": 4,
+            "shape": "square",
+            "gridPosition": {
+              "col": "5",
+              "row": "2"
+            }
+          },
+          {
+            "type": "table",
+            "id": 17,
+            "capacity": 4,
+            "shape": "square",
+            "gridPosition": {
+              "col": "4",
+              "row": "5"
+            }
+          },
+          {
+            "type": "table",
+            "id": 1,
+            "capacity": 4,
+            "shape": "square",
+            "gridPosition": {
+              "col": "3",
+              "row": "2"
+            }
+          },
+          {
+            "type": "table",
+            "id": 10,
+            "capacity": 4,
+            "shape": "square",
+            "gridPosition": {
+              "col": "4",
+              "row": "2"
+            }
+          },
+          {
+            "type": "table",
+            "id": 21,
+            "capacity": 6,
+            "shape": "rect",
+            "gridPosition": {
+              "col": "6",
+              "row": "4"
+            }
+          },
+          {
+            "type": "table",
+            "id": 19,
+            "capacity": 6,
+            "shape": "rect",
+            "gridPosition": {
+              "col": "6",
+              "row": "2"
+            }
+          },
+          {
+            "type": "table",
+            "id": 9,
+            "capacity": 2,
+            "shape": "round",
+            "gridPosition": {
+              "col": "7",
+              "row": "1"
+            }
+          },
+          {
+            "type": "table",
+            "id": 15,
+            "capacity": 4,
+            "shape": "square",
+            "gridPosition": {
+              "col": "4",
+              "row": "3"
+            }
+          },
+          {
+            "type": "table",
+            "id": 6,
+            "capacity": 2,
+            "shape": "round",
+            "gridPosition": {
+              "col": "2",
+              "row": "1"
+            }
+          }
+        ]
+      },
+      "cardapio": {
+        "Entradas": [
+          {
+            "nome": "Casquinha de Siri",
+            "descrição": "Carne de siri refogada e gratinada com queijo parmesão.",
+            "preço": "R$ 30,00"
+          },
+          {
+            "nome": "Camarão Alho e Óleo",
+            "descrição": "Camarões salteados no azeite com alho laminado e pimenta.",
+            "preço": "R$ 55,00"
+          },
+          {
+            "nome": "Bolinho de Bacalhau",
+            "descrição": "Porção com 8 unidades do tradicional bolinho de bacalhau português.",
+            "preço": "R$ 40,00"
+          }
+        ],
+        "Pratos Principais": [
+          {
+            "nome": "Moqueca Capixaba",
+            "descrição": "Peixe branco e camarão cozidos com tomate, coentro e cebola. Acompanha pirão e arroz.",
+            "preço": "R$ 120,00"
+          },
+          {
+            "nome": "Salmão Grelhado",
+            "descrição": "Posta de salmão grelhado com molho de maracujá e purê de batata baroa.",
+            "preço": "R$ 75,00"
+          },
+          {
+            "nome": "Bobó de Camarão",
+            "descrição": "Creme de mandioca com camarões, leite de coco e azeite de dendê. Acompanha arroz.",
+            "preço": "R$ 95,00"
+          },
+          {
+            "nome": "Peixe Frito Inteiro",
+            "descrição": "Tilápia inteira frita, crocante por fora e macia por dentro. Serve 2 pessoas.",
+            "preço": "R$ 88,00"
+          }
+        ],
+        "Sobremesas": [
+          {
+            "nome": "Mousse de Maracujá",
+            "descrição": "Cremoso e refrescante, feito com a polpa da fruta.",
+            "preço": "R$ 18,00"
+          },
+          {
+            "nome": "Torta Holandesa",
+            "descrição": "Base de biscoito, creme holandês e cobertura de chocolate.",
+            "preço": "R$ 22,00"
+          }
+        ]
+      }
+    },
+    {
+      "id": "4",
+      "infoCadastro": {
+        "nome": "Estação do Hambúrguer",
+        "imagemUrl": "assets/img/restaurantes/estacao-do-hamburguer.jpg",
+        "endereco": "Rua do Rock, 123, Contagem, MG",
+        "telefone": "31955554444",
+        "capacidade": 35,
+        "categoria": "Hamburgueria",
+        "email": "estacao@burger.com",
+        "password": "burger"
+      },
+      "mapaRestaurante": {
+        "grid": {
+          "columns": 5,
+          "rows": 5
+        },
+        "elements": [
+          {
+            "type": "feature",
+            "label": "Balcão",
+            "gridPosition": {
+              "col": "1 / 6",
+              "row": "1"
+            }
+          },
+          {
+            "type": "feature",
+            "label": "Fliperama",
+            "gridPosition": {
+              "col": "1",
+              "row": "5"
+            }
+          },
+          {
+            "type": "table",
+            "id": 18,
+            "capacity": 6,
+            "shape": "rect",
+            "gridPosition": {
+              "col": "5",
+              "row": "4"
+            }
+          },
+          {
+            "type": "table",
+            "id": 6,
+            "capacity": 2,
+            "shape": "round",
+            "gridPosition": {
+              "col": "1",
+              "row": "2"
+            }
+          },
+          {
+            "type": "table",
+            "id": 5,
+            "capacity": 4,
+            "shape": "square",
+            "gridPosition": {
+              "col": "4",
+              "row": "5"
+            }
+          },
+          {
+            "type": "table",
+            "id": 9,
+            "capacity": 2,
+            "shape": "round",
+            "gridPosition": {
+              "col": "4",
+              "row": "2"
+            }
+          },
+          {
+            "type": "table",
+            "id": 12,
+            "capacity": 2,
+            "shape": "round",
+            "gridPosition": {
+              "col": "1",
+              "row": "4"
+            }
+          },
+          {
+            "type": "table",
+            "id": 15,
+            "capacity": 4,
+            "shape": "square",
+            "gridPosition": {
+              "col": "3",
+              "row": "4"
+            }
+          },
+          {
+            "type": "table",
+            "id": 14,
+            "capacity": 4,
+            "shape": "square",
+            "gridPosition": {
+              "col": "4",
+              "row": "3"
+            }
+          },
+          {
+            "type": "table",
+            "id": 16,
+            "capacity": 4,
+            "shape": "square",
+            "gridPosition": {
+              "col": "4",
+              "row": "4"
+            }
+          },
+          {
+            "type": "table",
+            "id": 13,
+            "capacity": 2,
+            "shape": "round",
+            "gridPosition": {
+              "col": "2",
+              "row": "4"
+            }
+          },
+          {
+            "type": "table",
+            "id": 8,
+            "capacity": 6,
+            "shape": "rect",
+            "gridPosition": {
+              "col": "3",
+              "row": "2"
+            }
+          },
+          {
+            "type": "table",
+            "id": 19,
+            "capacity": 6,
+            "shape": "rect",
+            "gridPosition": {
+              "col": "5",
+              "row": "5"
+            }
+          },
+          {
+            "type": "table",
+            "id": 3,
+            "capacity": 2,
+            "shape": "round",
+            "gridPosition": {
+              "col": "5",
+              "row": "3"
+            }
+          },
+          {
+            "type": "table",
+            "id": 7,
+            "capacity": 4,
+            "shape": "square",
+            "gridPosition": {
+              "col": "2",
+              "row": "2"
+            }
+          },
+          {
+            "type": "table",
+            "id": 4,
+            "capacity": 4,
+            "shape": "square",
+            "gridPosition": {
+              "col": "2",
+              "row": "5"
+            }
+          },
+          {
+            "type": "table",
+            "id": 2,
+            "capacity": 2,
+            "shape": "round",
+            "gridPosition": {
+              "col": "3",
+              "row": "3"
+            }
+          },
+          {
+            "type": "table",
+            "id": 10,
+            "capacity": 4,
+            "shape": "square",
+            "gridPosition": {
+              "col": "5",
+              "row": "2"
+            }
+          },
+          {
+            "type": "table",
+            "id": 1,
+            "capacity": 2,
+            "shape": "round",
+            "gridPosition": {
+              "col": "1",
+              "row": "3"
+            }
+          },
+          {
+            "type": "table",
+            "id": 11,
+            "capacity": 6,
+            "shape": "rect",
+            "gridPosition": {
+              "col": "2",
+              "row": "3"
+            }
+          },
+          {
+            "type": "table",
+            "id": 17,
+            "capacity": 4,
+            "shape": "square",
+            "gridPosition": {
+              "col": "3",
+              "row": "5"
+            }
+          }
+        ]
+      },
+      "cardapio": {
+        "Burgers": [
+          {
+            "nome": "Clássico da Estação",
+            "descrição": "Pão brioche, burger de 180g, queijo prato, alface, tomate e molho da casa.",
+            "preço": "R$ 35,00"
+          },
+          {
+            "nome": "Ferrovia de Bacon",
+            "descrição": "Pão australiano, burger de 180g, dobro de bacon, cheddar cremoso e cebola caramelizada.",
+            "preço": "R$ 42,00"
+          },
+          {
+            "nome": "Expresso do Chef",
+            "descrição": "Pão brioche, burger de 180g, queijo brie, geleia de pimenta e rúcula.",
+            "preço": "R$ 45,00"
+          },
+          {
+            "nome": "Vagão Vegetariano",
+            "descrição": "Pão de batata, burger de cogumelos com grão de bico, queijo, alface e tomate.",
+            "preço": "R$ 38,00"
+          }
+        ],
+        "Porções": [
+          {
+            "nome": "Batata Frita da Casa",
+            "descrição": "Batatas rústicas com alecrim e páprica, acompanha maionese da casa.",
+            "preço": "R$ 25,00"
+          },
+          {
+            "nome": "Onion Rings",
+            "descrição": "Anéis de cebola empanados e crocantes com molho barbecue.",
+            "preço": "R$ 28,00"
+          }
+        ],
+        "Bebidas": [
+          {
+            "nome": "Milkshake de Ovomaltine",
+            "descrição": "500ml do mais cremoso milkshake.",
+            "preço": "R$ 22,00"
+          },
+          {
+            "nome": "Milkshake de Morango",
+            "descrição": "500ml, feito com morangos frescos.",
+            "preço": "R$ 20,00"
+          },
+          {
+            "nome": "Refrigerante Refil",
+            "descrição": "Beba à vontade por 1 hora (Coca-Cola, Guaraná, Soda).",
+            "preço": "R$ 15,00"
+          }
+        ]
+      }
+    }
+  ],
+  "feedbacks": []
 }

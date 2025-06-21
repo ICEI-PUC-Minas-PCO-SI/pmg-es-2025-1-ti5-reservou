@@ -1,0 +1,77 @@
+:root {
+  --status-pendente: #ffc107; 
+  --status-confirmada: #198754; 
+  --status-cancelada: #dc3545; 
+  --status-concluida: #6c757d; 
+  --shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --transition: all 0.2s ease-in-out;
+}
+
+.card-header h2 {
+    color: var(--primary-red);
+    font-weight: 400;
+}
+
+.list-group-item {
+  margin-bottom: 1rem;
+  border-radius: 0.5rem !important;
+  transition: var(--transition);
+  border: 1px solid #ddd !important;
+  border-left-width: 5px !important;
+}
+
+.list-group-item:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-medium);
+}
+
+.reserva-info strong {
+  color: var(--primary-red);
+  font-size: 1.1rem;
+}
+
+.reserva-antiga {
+    opacity: 0.65;
+}
+.reserva-antiga:hover {
+    opacity: 1;
+}
+
+.reserva-status {
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+    color: white;
+}
+
+.reserva-status.pendente { background-color: var(--status-pendente); color: #333; }
+.reserva-status.confirmada { background-color: var(--status-confirmada); }
+.reserva-status.cancelada { background-color: var(--status-cancelada); }
+.reserva-status.concluida { background-color: var(--status-concluida); }
+
+.list-group-item.status-pendente { border-left-color: var(--status-pendente) !important; }
+.list-group-item.status-confirmada { border-left-color: var(--status-confirmada) !important; }
+.list-group-item.status-cancelada { border-left-color: var(--status-cancelada) !important; }
+.list-group-item.status-concluida { border-left-color: var(--status-concluida) !important; }
+
+.reserva-actions .btn {
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.btn-edit {
+    background-color: var(--accent-gold);
+    border-color: var(--accent-gold);
+    color: #1A1A1A;
+}
+
+.btn-delete {
+    background-color: transparent;
+    border: 1px solid var(--primary-red);
+    color: var(--primary-red);
+}
+.btn-delete:hover {
+    background-color: var(--primary-red);
+    color: white;
+}
