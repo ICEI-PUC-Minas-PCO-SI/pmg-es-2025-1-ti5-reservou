@@ -26,12 +26,6 @@ Dos Santos
 
 ## Instruções de utilização
 
-Com certeza\! Baseado nos comandos que você forneceu, aqui está um modelo de `README.md` claro e bem estruturado.
-
-Ele corrige o pequeno erro de digitação (`npm startt` para `npm start`) e explica a necessidade do comando `cd src`, o que é muito importante para outros usuários entenderem.
-
-Basta copiar e colar o texto abaixo no seu arquivo `README.md` no GitHub.
-
 -----
 
 1.  **Acesse o diretório `src`**
@@ -61,8 +55,6 @@ Após a execução do último comando, o servidor estará ativo e pronto para re
 
 -----
 
-```
-```
 
 # Documentação
 
