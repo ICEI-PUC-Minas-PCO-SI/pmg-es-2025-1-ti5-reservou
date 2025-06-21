@@ -26,13 +26,43 @@ Dos Santos
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+Com certeza\! Baseado nos comandos que você forneceu, aqui está um modelo de `README.md` claro e bem estruturado.
 
-Não deixe de informar o link onde a aplicação estará disponível para acesso (por exemplo: https://adota-pet.herokuapp.com/src/index.html).
+Ele corrige o pequeno erro de digitação (`npm startt` para `npm start`) e explica a necessidade do comando `cd src`, o que é muito importante para outros usuários entenderem.
 
-Se houver usuário de teste, o login e a senha também deverão ser informados aqui (por exemplo: usuário - admin / senha - admin).
+Basta copiar e colar o texto abaixo no seu arquivo `README.md` no GitHub.
 
-O link e o usuário/senha descritos acima são apenas exemplos de como tais informações deverão ser apresentadas.
+-----
+
+1.  **Acesse o diretório `src`**
+    *O arquivo `package.json` e as dependências do projeto estão localizados dentro da pasta `src`.*
+
+    ```bash
+    cd src
+    ```
+
+2.  **Instale as dependências**
+    *Este comando irá instalar todas as bibliotecas listadas no `package.json`.*
+
+    ```bash
+    npm install 
+    ```
+
+    *(ou `npm i`)*
+
+3.  **Execute a aplicação**
+    *Este comando iniciará o servidor de desenvolvimento.*
+
+    ```bash
+    npm start
+    ```
+
+Após a execução do último comando, o servidor estará ativo e pronto para receber requisições, geralmente no endereço `http://localhost:3000`.
+
+-----
+
+```
+```
 
 # Documentação
 
