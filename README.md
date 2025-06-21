@@ -53,6 +53,12 @@ Dos Santos
 
 Após a execução do último comando, o servidor estará ativo e pronto para receber requisições, geralmente no endereço `http://localhost:3000`.
 
+Credenciais de Teste Cadastrada para teste como usuário 
+
+```bash
+Usuário: admin@adm.com
+Senha: admin
+```
 -----
 
 
