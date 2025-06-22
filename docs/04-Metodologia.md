@@ -1,94 +1,54 @@
-
 # Metodologia
 
 <span style="color:red">Pré-requisitos: <a href="03-Product-design.md"> Product design</a></span>
 
-Descreva aqui a metodologia de trabalho do grupo para abordar o problema. Inclua definições sobre os ambientes de trabalho utilizados pela equipe para desenvolver o projeto. Isso abrange a relação dos ambientes utilizados, a estrutura para a gestão do código-fonte, além da definição do processo e das ferramentas por meio dos quais a equipe se organiza (gestão de equipes).
+A equipe adotou uma abordagem baseada em metodologias ágeis para o gerenciamento do projeto, dividindo o trabalho em **Sprints** para entregas incrementais e regulares. O grupo utilizou ferramentas digitais para comunicação, prototipagem, controle de versão e acompanhamento do projeto, garantindo a organização e a colaboração remota e presencial de todos os membros.
 
 ## Relação de ambientes de trabalho
 
-Os artefatos do projeto são desenvolvidos a partir de diversas plataformas. A relação dos ambientes com seus respectivos propósitos deverá ser apresentada em uma tabela que especifique e detalhe Ambiente, Plataforma e Link de Acesso. Defina também os ambientes e frameworks que serão utilizados no desenvolvimento de aplicações móveis.
+Os artefatos do projeto foram desenvolvidos utilizando plataformas variadas, cada uma com um propósito específico:
 
-## Controle de versão
+| Ambiente                            | Plataforma       | Link de acesso                                                  |
+|-------------------------------------|------------------|------------------------------------------------------------------|
+| Processo de Design Thinking         | Figma            | [https://www.figma.com/proto/oHKwPjzG327TDr7BkacMgb/RESERVOU ](https://www.figma.com/design/oHKwPjzG327TDr7BkacMgb/RESERVOU?node-id=0-1&p=f&t=TcncI5y3gQlPKnsI-0)     |
+| Repositório de código fonte         | GitHub           | [_inserir link do repositório aqui_ ](https://github.com/ICEI-PUC-Minas-PCO-SI/pmg-es-2025-1-ti5-reservou/tree/main)                              |
+| Documentação e arquivos do projeto  | GitHub           | [_inserir link do repositório aqui_ ](https://github.com/ICEI-PUC-Minas-PCO-SI/pmg-es-2025-1-ti5-reservou/tree/main)                              |
+| Interface do usuário (Protótipo)    | Figma            | https://www.figma.com/proto/oHKwPjzG327TDr7BkacMgb/RESERVOU      |
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
 
-A ferramenta de controle de versão adotada no projeto foi o [Git](https://git-scm.com/), sendo que o [GitHub](https://github.com) foi utilizado para hospedagem do repositório.
-
-O projeto segue a seguinte convenção para o nome de branches:
-
-- `main`: versão estável já testada do software
-- `unstable`: versão já testada do software, porém instável
-- `testing`: versão em testes do software
-- `dev`: versão de desenvolvimento do software
-
-Quanto à gerência de issues, o projeto adota a seguinte convenção para etiquetas:
-
-- `documentation`: melhorias ou acréscimos à documentação
-- `bug`: uma funcionalidade encontra-se com problemas
-- `enhancement`: uma funcionalidade precisa ser melhorada
-- `feature`: uma nova funcionalidade precisa ser introduzida
-
-Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gestão de tags, merges, commits e branches é realizada. Discuta também como a gestão de issues foi feita.
-
-> **Links úteis**:
-> - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
-> - [Git e GitHub](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
-> - [Comparando fluxos de trabalho](https://www.atlassian.com/br/git/tutorials/comparing-workflows)
-> - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
-> - [The gitflow workflow - in less than 5 mins](https://www.youtube.com/watch?v=1SXpE08hvGs)
 
 ## Planejamento do projeto
 
-###  Divisão de papéis
+### Divisão de papéis
 
-A equipe foi dividida da seguinte forma:
+A equipe foi organizada com os seguintes papéis e responsabilidades:
 
--Designer UX/UI: Responsável pela interface e experiência do usuário. 
-
--Desenvolvedor Front-end: Implementa a interface e interação do sistema. 
-
--Desenvolvedor Back-end: Cuida da estrutura do servidor e banco de dados.
-
--Gerente de projeto: Coordena as atividades e prazos.
-
-
-
-> **Links úteis**:
-> - [11 passos essenciais para implantar Scrum no seu projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
-> - [Os papéis do Scrum e a verdade sobre cargos nessa técnica](https://www.atlassian.com/br/agile/scrum/roles)
+- **Arthur Augusto:** Cadastro de restaurantes, login de administrador.
+- **Caio Antônio:** Cadastro de clientes, login de usuário, envio de dúvidas e feedbacks.
+- **Gean Marques:** Sistema de favoritos, visualização de reservas pelo usuário.
+- **Juan Carlos:** Sistema de reservas simples e interativo, visualização de mesas.
+- **Paulo Henrique:** Visualização de restaurantes e painel do administrador.
+- **Sofia Sousa:** Visualização e atualização do cardápio.
 
 ### Processo
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
+O grupo aplicou o **Design Thinking** para compreensão e validação do problema, criando personas, matriz CSD e proposta de valor.
 
-Coloque detalhes sobre o processo de Design Thinking e a implementação do Framework Scrum seguido pelo grupo. O grupo deverá fazer uso do recurso de gerenciamento de projeto oferecido pelo GitHub, o GitHub Projects, que permite acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução. 
+O gerenciamento ágil do projeto foi realizado por meio do **GitHub Projects**, onde as tarefas foram organizadas em colunas de Kanban (Backlog, Em andamento, Concluído), permitindo acompanhar o progresso de cada entrega e manter uma visão clara das prioridades.
 
-Coloque uma imagem da estrutura da ferramenta de controle de tarefas (Kanban) e o link do GitHub Projects.
- 
-> **Links úteis**:
-> - [GitHub Projects - YouTube](https://www.youtube.com/playlist?list=PLiO7XHcmTsldZR93nkTFmmWbCEVF_8F5H)
-> - [Planejamento e gestão ágil de projetos](https://pucminas.instructure.com/courses/87878/pages/unidade-2-tema-2-utilizacao-de-ferramentas-para-controle-de-versoes-de-software)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards)
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Como criar backlogs no GitHub](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial slack](https://slack.com/intl/en-br/)
+_Coloque aqui uma imagem da estrutura do Kanban do GitHub Projects_
 
-### Ferramentas
+## Ferramentas
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
+A seguir, as ferramentas utilizadas ao longo do projeto, com suas justificativas:
 
-Liste todas as ferramentas que foram empregadas no projeto, justificando a escolha delas, sempre que possível. Inclua itens como: (1) editor de código, (2) ferramentas de comunicação, (3) ferramentas de diagramação, (4) plataformas de hospedagem, entre outras.
+| Finalidade                      | Ferramenta/Plataforma    | Justificativa                                       |
+|--------------------------------|---------------------------|-----------------------------------------------------|
+| Editor de código               | Visual Studio Code        | Interface amigável e extensões úteis para web.      |
+| Versionamento e repositório   | Git + GitHub              | Controle de versões e colaboração entre membros.    |
+| Prototipação                   | Figma                     | Criação de interfaces e fluxo de navegação.         |
+| Comunicação                    | WhatsApp e Discord        | Comunicação rápida entre os membros.                |
+| Gerenciamento do projeto       | GitHub Projects           | Organização de tarefas em formato Kanban.           |
+| Hospedagem                     | Vercel                    | Publicação rápida e gratuita da aplicação web.      |
+| Framework CSS                  | Bootstrap                 | Estilização responsiva e rápida dos elementos HTML. |
 
-⚠️ EXEMPLO ⚠️ os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela que se segue.
-
-| Ambiente                            | Plataforma                         | Link de acesso                       |
-|-------------------------------------|------------------------------------|--------------------------------------|
-| Processo de Design Thinking         | Miro                               | https://....   ⚠️ EXEMPLO ⚠️        |
-| Repositório de código fonte         | GitHub                             | https://....   ⚠️ EXEMPLO ⚠️        |
-| Documentos do projeto               | GitHub                             | http://....    ⚠️ EXEMPLO ⚠️        |
-| Gerenciamento do projeto            | GitHub Projects                    | http://....    ⚠️ EXEMPLO ⚠️        |
-| Projeto de interface                | Figma                              | http://....    ⚠️ EXEMPLO ⚠️        |
-| Hospedagem                          | Vercel                             | http://....    ⚠️ EXEMPLO ⚠️        |
- 
