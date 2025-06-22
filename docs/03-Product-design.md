@@ -3,7 +3,7 @@
 <span style="color:red">Pré-requisitos: <a href="02-Product-discovery.md"> Product discovery</a></span>
 
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
+
 
 
 
@@ -27,7 +27,7 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 
 
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
+
 
 **Mariana Lopes**  empresária de uma rede de restaurantes, precisa de um sistema escalável que permita gerenciar reservas em várias unidades, fornecendo relatórios detalhados e suporte ágil para tomadas de decisão. 
 
@@ -52,7 +52,6 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 
 
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
 >
 > O mapa da proposta de valor é uma ferramenta que auxilia na definição do tipo de produto ou serviço que melhor atende às personas previamente estabelecidas.
 
